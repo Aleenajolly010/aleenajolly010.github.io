@@ -1,0 +1,77 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+
+body {
+    margin: 0;
+    font-family: "Inter", "Poppins", sans-serif;
+    background-color: #0f0f1a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+h1, p {
+    margin: 0;
+}
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+nav {
+    background-color: #2b0040;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e0d4ff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #8a2be2, #2b0040);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
