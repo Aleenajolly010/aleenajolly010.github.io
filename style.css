@@ -7,7 +7,7 @@
     --primary-color: #803b31;
     --secondary-color: #ffffff;
     --color-1: #ffc3b3a2;
-    --color-2: #ffffff;
+    --color-2: #bea0a0;
     --color-3: #ffffff;
 }
 
@@ -41,7 +41,12 @@ nav ul {
     align-items: center;
     list-style: none;
     gap: 2em;
-    justify-content: flex-end;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: Merriweather, Poppins;
+    font-weight: bold;
 }
 
 nav a {
@@ -73,6 +78,7 @@ header img {
     max-width: 100%;
     border-radius: 1em;
     object-fit: cover;
+
 }
 
 .text-container {
@@ -96,4 +102,102 @@ h1 {
     padding: .75em 1.25em;
     border-radius: .5em;
     font-weight: 600;
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section#projects {
+    background-color: var(--color-1);
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 988px){
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+
+    }
+}
+
+@media(max-width: 640px){
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child, 
+    nav li:last-child {
+        display: block;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .grid-container {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
