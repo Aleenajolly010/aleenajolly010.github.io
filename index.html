@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleena Jolly</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
     <header>
         <!-- NAVIGATION -->
-        <nav>
-            <ul>
-               <li><a href="index.html">Aleena Jolly</a></li> 
-               <li><a href="#About">About</a></li>  
-               <li><a href="index.html">Projects</a></li> 
-               <li><a href="index.html">Skills</a></li> 
-               <li><a href="index.html">Contact</a></li>
-               <li><a href="" class="cta-button">My resume</a></li>               
-            </ul>
-        </nav> 
-    </header>
-    <section>
-        <div class="flex-container">
-            <img height="400px" src="images/Picture2.PNG">
-            
-            <div class="text-container">
-                <h1>Hi, <br> I'm Aleena Jolly</h1>
-                <p>A <strong>Data and AI Strategist</strong> who builds intuitive tools for lasting adoption.</p>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Aleena Jolly</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Hobbies</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="" class="cta-button"><span class="material-symbols-outlined">download</span>
+                            Download
+                            CV</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- FRONT PAGE -->
+        <div class="front-page">
+            <div class="flex-container">
+                <div class="myPic">
+                    <img height="400px" src="images/Picture2.PNG">
+                </div>
+
+                <div class="text-container">
+                    <h1 class="hi"> Hi, </h1>
+                    <h1 class="inline"> I'm </h1>
+                    <h1 class="name"> Aleena Jolly</h1>
+                    <h2 class="role">Data & AI Strategist</h2>
+                    <p>I turn complex data into intuitive insights and build AI-powered solutions that drive <span
+                            class="highlight">better decisions</span> and <span class="highlight">real-world
+                            impact.</span>
+                    </p>
+                </div>
             </div>
 
-        </div> 
-    </section>
+            <!-- SUMMARY -->
+            <div class="summary">
+                <ul>
+                    <li>
+                        <div class="items">
+                            <a href="" class="items-button"><span class="material-symbols-outlined"
+                                    style="font-size: 30px;">school</span></a>
+                            <p class="items-container"> MSc Computer <br> Science & Engineering <span
+                                    class="highlight">DTU</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="items">
+                            <a href="" class="items-button"><span class="material-symbols-outlined"
+                                    style="font-size: 30px;">work</span></a>
+                            <p class="items-container"> Supply Chain Analyst <br><span class="highlight">Novo
+                                    Nordisk</span><br> 2023 - 2025</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="items">
+                            <a href="" class="items-button"><span class="material-symbols-outlined"
+                                    style="font-size: 30px;">code</span></a>
+                            <p class="items-container"> Python * PowerBI <br> Tableau * SQL * AI <br> <span
+                                    class="highlight"> and more.</span></p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="items">
+                            <a href="" class="items-button"><span class="material-symbols-outlined"
+                                    style="font-size: 30px;">draw</span></a>
+                            <p class="items-container"> Design enthusiast <br> who loves creating <br> <span
+                                    class="highlight"> meaningful experiences.</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
 
     <section>
         <div class="flex-container">
@@ -40,7 +101,12 @@
                     My Story
                 </h2>
                 <p>
-                    I created this website for me to see myself more clearly. I’ve always had so many hobbies, side quests, and subjects I’m professionally interested in. That’s what curiosity does. Now I have a million things to choose from, and I’m trying to figure out what I want a career in. Should I be an AI engineer, a data scientist, a computer vision engineer, or an artist? This space is my way of exploring all those possibilities without losing sight of who I am. And honestly, with this website, I might be adding “web designer” to the list too.
+                    I created this website for me to see myself more clearly. I’ve always had so many hobbies, side
+                    quests, and subjects I’m professionally interested in. That’s what curiosity does. Now I have a
+                    million things to choose from, and I’m trying to figure out what I want a career in. Should I be an
+                    AI engineer, a data scientist, a computer vision engineer, or an artist? This space is my way of
+                    exploring all those possibilities without losing sight of who I am. And honestly, with this website,
+                    I might be adding “web designer” to the list too.
                 </p>
             </div>
         </div>
@@ -53,7 +119,7 @@
             <img width="250px" style="grid-area: img-2" src="images/About.jpg">
             <img width="250px" style="grid-area: img-3" src="images/About.jpg">
             <img width="250px" style="grid-area: img-4" src="images/About.jpg">
-            <img width="250px" style="grid-area: img-5" src="images/About.jpg">            
+            <img width="250px" style="grid-area: img-5" src="images/About.jpg">
         </div>
     </section>
 
@@ -62,4 +128,5 @@
         <a href="mailto:aleenajolly010@gmail.com"> Contact</a>
     </footer>
 </body>
+
 </html>
